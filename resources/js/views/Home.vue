@@ -1,6 +1,6 @@
 <template>
     <div>
-    	store-Home
+    	Store-Home
     </div>
 </template>
 <script>
