@@ -16,6 +16,10 @@ window.axios.defaults.headers.common = {
 }
 
 window.Vue = require('vue')
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 
 const isDebug_mode = process.env.NODE_ENV !== 'production';
 Vue.config.debug = isDebug_mode;

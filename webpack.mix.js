@@ -17,6 +17,8 @@ mix.js('resources/js/app.js', 'public/js')
 mix.sass('resources/sass/main.scss', 'public/css')
 	.sass('resources/sass/style.scss', 'public/css')
 
+mix.copy('resources/images/', 'public/images')
+
 if (!mix.inProduction()) {
 	mix.sourceMaps()
 } else {

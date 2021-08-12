@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="ct-pc-main">
     	Store-Home
     </div>
 </template>

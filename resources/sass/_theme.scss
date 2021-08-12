@@ -1,0 +1,81 @@
+$main: #333333;
+$second: #262626;
+
+$font-main: #E6E6E6;
+$font-second: #21F7FF;
+$font-third: #707070;
+
+body,
+html {
+    background-color: $main;
+    color: $font-main;
+}
+
+/* nav */
+.ct-nav {
+    background: $second 0% 0%;
+
+    .bg-dark {
+        background: $second 0% 0%;
+    }
+
+    .f-nav-search {
+        background-color: $second;
+        border-color: $font-main;
+        color: $font-main;
+    }
+
+    .f-nav-link {
+        color: $font-main;
+
+        .f-nav-cart-div {
+            span.num-badge {
+                color: $font-second;
+            }
+        }
+
+        &:hover .title {
+            color: $font-second;
+        }
+    }
+
+    .separate {
+        color: $font-third;
+    }
+
+}
+
+.ct-pc-left {
+    .list-group {
+        &.menu, &.news {
+            border-color: $font-third !important;
+        }
+
+        .list-group-item {
+
+            button,
+            a {
+                color: $font-main;
+
+                &:hover,
+                &.not-collapsed {
+                    color: $font-second;
+                }
+            }
+
+            &.title {
+                color: $font-third;
+            }
+        }
+    }
+
+    .f-news-link {
+        &:hover {
+            color: $font-third !important;
+        }
+    }
+}
+
+.ct-pc-main {
+    border-color: $font-third !important;
+}

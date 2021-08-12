@@ -1,0 +1,48 @@
+body,
+html {
+    font-size: 1.05rem;
+    font-family: 'Noto Sans TC', sans-serif !important;
+    font-size: 1rem;
+}
+
+.ct-nav {
+    .logo-text {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .f-nav-search-form {
+        .f-nav-search {
+            font-size: 0.75rem;
+        }
+    }
+
+    .f-nav-link {
+        .f-nav-cart-div {
+            .num-badge {
+                font-size: .75rem;
+                font-family: Oswald, sans-serif !important;
+            }
+        }
+    }
+}
+
+.ct-pc-left {
+    .list-group {
+        .list-group-item {
+            font-size: 1rem;
+
+            button {
+                font-size: 1.25rem;
+            }
+        }
+
+        .f-sub-menu-link {
+            font-size: .85rem;
+        }
+
+        .f-news-link {
+            font-size: .7rem;
+        }
+    }
+}
