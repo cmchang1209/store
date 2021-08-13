@@ -1,6 +1,6 @@
 <template>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand href="#">
+    <b-navbar type="dark" class="px-0">
+        <b-navbar-brand href="/">
             <img src="images/logo.png" class="d-inline-block align-top logo-img" alt="FidoStore">
             <span class="logo-text">FIDO STORE</span>
         </b-navbar-brand>
@@ -20,12 +20,12 @@
                         <span class="title">購物車</span>
                     </router-link>
                     <span class="separate">|</span>
-                    <router-link to="login" class="f-nav-link login">
+                    <a href="/login" class="f-nav-link login">
                         <div class="d-inline-block f-nav-login-div">
                             <img src="images/login.png" class="d-inline-block align-top login-img" alt="FidoCart">
                             <span class="title">登入</span>
                         </div>
-                    </router-link>
+                    </a>
                 </div>
             </b-navbar-nav>
         </b-collapse>

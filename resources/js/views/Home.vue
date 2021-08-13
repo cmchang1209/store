@@ -1,11 +1,14 @@
 <template>
     <div class="ct-pc-main">
-    	Store-Home
+    	<f-carousel />
     </div>
 </template>
 <script>
+import Carousel from '../components/layout/Carousel';
 export default {
-    components: {},
+    components: {
+        'f-carousel': Carousel,
+    },
     data() {
         return {}
     },

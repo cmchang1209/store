@@ -8,16 +8,20 @@
         </b-container>
         <!-- main area -->
         <b-container>
-            <b-row>
-                <b-col><f-pc-left /></b-col>
-                <b-col cols="10" class="p-0">
+            <b-row v-if="isShowLeftMenu">
+                <b-col>
+                    <f-pc-left />
+                </b-col>
+                <b-col cols="9" class="pl-0">
                     <router-view></router-view>
                 </b-col>
             </b-row>
+            <router-view v-else></router-view>
         </b-container>
     </div>
 </template>
 <script>
+import { mapState, mapActions } from 'vuex'
 import Nav from '../components/layout/Nav';
 import PcLeft from '../components/layout/PcLeft';
 export default {
@@ -29,9 +33,22 @@ export default {
     data() {
         return {}
     },
-    created() {},
-    mounted() {},
-    methods: {},
+    created() {
+        var path = this.$route.path
+        var paths = path.split('/')
+        if (paths[1] === 'login') {
+            this.changePageStatus(false)
+        }
+    },
+    computed: mapState({
+        isShowLeftMenu: state => state.gobalData.isShowLeftMenu,
+    }),
+    mounted() {
+
+    },
+    methods: {
+        ...mapActions(['changePageStatus'])
+    },
     watch: {}
 }
 
