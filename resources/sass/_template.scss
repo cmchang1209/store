@@ -29,8 +29,8 @@
             background-image: url('./images/search.png');
             background-size: auto 100%;
             background-repeat: no-repeat;
-            top: 11px;
-            right: 12px;
+            top: .75rem;
+            right: 1.15rem;
         }
     }
 
@@ -73,8 +73,11 @@
 
 .ct-pc-left {
     margin-right: .25rem;
+
     .list-group {
-        &.menu, &.news {
+
+        &.menu,
+        &.news {
             border-bottom: 1px solid;
             border-radius: 0;
         }
@@ -133,6 +136,7 @@
 
         .f-news-link {
             text-decoration: none;
+
             &:hover {
                 text-decoration: underline;
             }
@@ -144,4 +148,51 @@
     border-left: 1px solid;
     min-height: calc(100vh - 150px);
     padding-left: 3rem;
+
+    .ct-carousel {
+        margin-bottom: 4rem;
+
+        .carousel-indicators {
+            bottom: -3rem;
+
+            li {
+                width: .5rem;
+                height: .5rem;
+                border: 1px solid;
+                border-radius: .25rem;
+                margin-left: 1.25rem;
+                margin-right: 1.25rem;
+            }
+        }
+    }
+}
+
+.ct-home-iteam-list {
+    h5 {
+        letter-spacing: .15rem;
+    }
+
+    .f-more-warp {
+        text-align: right;
+        .f-more-link {
+            letter-spacing: .15rem;
+        }
+    }
+
+    .card {
+        border-radius: 0;
+        border-width: 0;
+        background-color: inherit;
+        min-width: 17rem;
+
+        .card-img, .card-img-top {
+            border-radius: 0;
+        }
+
+        .card-body {
+            padding-left: 0;
+            padding-right: 0;
+            letter-spacing: .15rem;
+        }
+    }
 }

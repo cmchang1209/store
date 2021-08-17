@@ -47,7 +47,9 @@ html {
 
 .ct-pc-left {
     .list-group {
-        &.menu, &.news {
+
+        &.menu,
+        &.news {
             border-color: $font-third !important;
         }
 
@@ -78,4 +80,31 @@ html {
 
 .ct-pc-main {
     border-color: $font-third !important;
+
+    .ct-carousel {
+        .carousel-indicators {
+
+            li {
+                background-color: inherit;
+
+                &.active {
+                    background-color: $font-main;
+                }
+            }
+        }
+    }
+
+    .ct-home-iteam-list {
+
+        .f-more-link {
+            color: $font-third;
+        }
+
+        .card-body {
+            color: $font-main;
+            .price {
+                color: $font-second;
+            }
+        }
+    }
 }
