@@ -18,16 +18,21 @@
             </b-row>
             <router-view v-else></router-view>
         </b-container>
+        <b-container fluid class="ct-footer">
+            <f-footer />
+        </b-container>
     </div>
 </template>
 <script>
 import { mapState, mapActions } from 'vuex'
 import Nav from '../components/layout/Nav';
 import PcLeft from '../components/layout/PcLeft';
+import Footer from '../components/layout/Footer';
 export default {
     components: {
         'f-nav': Nav,
-        'f-pc-left': PcLeft
+        'f-pc-left': PcLeft,
+        'f-footer': Footer
     },
     props: [],
     data() {

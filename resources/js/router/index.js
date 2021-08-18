@@ -4,6 +4,7 @@ Vue.use(VueRouter)
 
 import Home from '../views/Home'
 import Login from '../views/Login'
+import Register from '../views/Register'
 
 //不允許導航到當前位置
 const originalPush = VueRouter.prototype.push
@@ -23,6 +24,10 @@ export default new VueRouter({
             path: '/login',
             name: 'Login',
             component: Login
+        },{
+            path: '/register',
+            name: 'Register',
+            component: Register
         },
         {
             path: "*",

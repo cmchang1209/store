@@ -1,5 +1,6 @@
 $main: #333333;
 $second: #262626;
+$third: #191919;
 
 $font-main: #E6E6E6;
 $font-second: #21F7FF;
@@ -102,9 +103,46 @@ html {
 
         .card-body {
             color: $font-main;
+
             .price {
                 color: $font-second;
             }
+        }
+    }
+}
+
+.ct-footer {
+    background: $second 0% 0%;
+
+    .lang-select {
+        option:checked {
+            background-color: $font-main;
+        }
+    }
+
+    a {
+        color: $font-main;
+    }
+}
+
+.login-page {
+    .card {
+        background: $second 0% 0%;
+
+        p.title{
+            border-bottom-color: $font-third !important;
+        }
+
+        a.f-register-link {
+           color: $font-second; 
+        }
+
+        a.f-forget-link {
+            color: $font-main;
+        }
+
+        input {
+            background-color: $third;
         }
     }
 }

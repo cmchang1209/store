@@ -174,6 +174,7 @@
 
     .f-more-warp {
         text-align: right;
+
         .f-more-link {
             letter-spacing: .15rem;
         }
@@ -185,7 +186,8 @@
         background-color: inherit;
         min-width: 17rem;
 
-        .card-img, .card-img-top {
+        .card-img,
+        .card-img-top {
             border-radius: 0;
         }
 
@@ -193,6 +195,37 @@
             padding-left: 0;
             padding-right: 0;
             letter-spacing: .15rem;
+        }
+    }
+}
+
+.ct-footer {
+    .lang-select {
+        box-shadow: none;
+        outline: none;
+        width: 70%;
+    }
+
+    letter-spacing: .15rem;
+
+    img {
+        width: 60%;
+    }
+}
+
+.login-page {
+    min-height: calc(100vh - 263px);
+
+    .card {
+        p.title {
+            border-bottom: 1px solid;
+        }
+    }
+
+    input {
+        border-width: 0px;
+        &:focus {
+            box-shadow: none;
         }
     }
 }
