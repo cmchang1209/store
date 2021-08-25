@@ -8,7 +8,7 @@
         </b-container>
         <!-- main area -->
         <b-container>
-            <b-row v-if="isShowLeftMenu">
+            <b-row v-if="isShowLeftMenu" class="main-area">
                 <b-col>
                     <f-pc-left />
                 </b-col>
@@ -41,7 +41,7 @@ export default {
     created() {
         var path = this.$route.path
         var paths = path.split('/')
-        if (paths[1] === 'login') {
+        if (['login', 'forget', 'register', 'cart'].indexOf(paths[1]) !== -1) {
             this.changePageStatus(false)
         }
     },

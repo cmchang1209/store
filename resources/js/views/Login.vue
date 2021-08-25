@@ -12,7 +12,7 @@
                             </router-link>
                         </span>
                     </p>
-                    <b-form @submit="onSubmit">
+                    <b-form>
                         <b-form-group id="input-group-1" label="密碼" label-for="input-1" description="">
                             <b-form-input id="input-1" v-model="form.email" type="email" placeholder="請輸入您的 E-mail" required></b-form-input>
                         </b-form-group>
@@ -21,13 +21,17 @@
                         </b-form-group>
                     </b-form>
                 </b-card-text>
-                <b-row class="justify-content-center" align-v="end">
+                <b-row class="justify-content-center mt-5" align-v="baseline">
                     <b-col cols="6">
-                        <router-link to="register" class="f-forget-link">
-                            創建一個帳號
+                        <router-link to="forget" class="f-forget-link">
+                            忘記密碼?
                         </router-link>
                     </b-col>
-                    <b-col cols="6">2</b-col>
+                    <b-col cols="6" class="text-right">
+                        <button type="button" class="fd-btn py-1 bg-blue" tabindex="3" @click="onSubmit" @enter="onSubmit">
+                            登入
+                        </button>
+                    </b-col>
                 </b-row>
             </b-card>
         </b-col>
@@ -47,7 +51,6 @@ export default {
     created() {},
     methods: {
         onSubmit(event) {
-            event.preventDefault()
             alert(JSON.stringify(this.form))
         }
     }

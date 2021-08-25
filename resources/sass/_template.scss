@@ -1,7 +1,6 @@
 /* nav for pc */
 .ct-nav {
     padding: 1.07rem 0;
-    margin-bottom: 1.5rem;
 
     .logo-img {
         margin-top: 1rem;
@@ -69,6 +68,48 @@
         clear: both;
         margin: 0 1.25rem;
     }
+}
+
+.f-cart-tooltip {
+    top: 3.35rem !important;
+    opacity: 1 !important;
+
+    .arrow {
+        &:before {
+            border-width: 0 1rem 1rem;
+        }
+    }
+
+    .tooltip-inner {
+        max-width: 400px;
+        border-radius: .5rem;
+        padding: 1.25rem 0;
+        text-align: left;
+
+        .lead {
+            border-bottom: 1px solid;
+        }
+
+        img {
+            width: calc(20% - 1rem);
+            padding-left: 1rem;
+        }
+
+        span {
+            display: inline-block;
+            width: 25%;
+            padding-left: 1rem;
+            vertical-align: top;
+
+            &.contant {
+                width: calc(55% - 1rem);
+            }
+        }
+    }
+}
+
+.main-area {
+    margin-top: 1.5rem;
 }
 
 .ct-pc-left {
@@ -144,7 +185,8 @@
     }
 }
 
-.ct-pc-main {
+.ct-pc-main,
+.more-list-page {
     border-left: 1px solid;
     min-height: calc(100vh - 150px);
     padding-left: 3rem;
@@ -167,7 +209,8 @@
     }
 }
 
-.ct-home-iteam-list {
+.ct-home-iteam-list,
+.more-list-page {
     h5 {
         letter-spacing: .15rem;
     }
@@ -184,7 +227,6 @@
         border-radius: 0;
         border-width: 0;
         background-color: inherit;
-        min-width: 17rem;
 
         .card-img,
         .card-img-top {
@@ -197,6 +239,10 @@
             letter-spacing: .15rem;
         }
     }
+}
+
+.ct-home-iteam-list .card {
+    min-width: 17rem;
 }
 
 .ct-footer {
@@ -213,19 +259,59 @@
     }
 }
 
-.login-page {
-    min-height: calc(100vh - 263px);
+.login-page,
+.forget-page,
+.register-page,
+.cart-page {
+    min-height: calc(100vh - 235px);
 
     .card {
+        border-radius: .5rem;
+
         p.title {
             border-bottom: 1px solid;
         }
     }
 
-    input {
+    input,
+    select {
         border-width: 0px;
+        height: auto;
+        padding: .75rem;
+        border-radius: .5rem;
+
         &:focus {
             box-shadow: none;
+        }
+    }
+
+    select {
+        padding: .7rem .75rem;
+    }
+
+    .fd-btn {
+        width: 10rem;
+    }
+}
+
+.register-page {
+    .warp {
+        border-radius: .5rem;
+
+        .list-title {
+            border-bottom: 1px solid;
+        }
+
+        #radio-gender {
+            margin-top: 1.75rem;
+        }
+
+        .f-submit-warp {
+            margin-top: 4.5rem;
+
+            .f-submit-buttom-warp {
+                margin-top: -.75rem;
+            }
         }
     }
 }

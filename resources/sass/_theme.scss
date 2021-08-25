@@ -12,6 +12,37 @@ html {
     color: $font-main;
 }
 
+.bg-blue {
+    background-color: $font-second;
+}
+
+.border-blue {
+    border-color: $font-second !important;
+}
+
+.text-color-3 {
+    color: $font-third;
+}
+
+.pagination {
+    .page-item {
+
+        span,
+        button {
+            color: $font-third;
+        }
+
+        &.active {
+
+            span,
+            button {
+                color: $third;
+                background-color: white !important;
+            }
+        }
+    }
+}
+
 /* nav */
 .ct-nav {
     background: $second 0% 0%;
@@ -44,6 +75,22 @@ html {
         color: $font-third;
     }
 
+}
+
+.f-cart-tooltip {
+    .tooltip-inner {
+        .lead {
+            border-color: $font-third !important;
+        }
+
+        .price {
+            color: $font-second;
+        }
+
+        .f-cart-link {
+            color: $font-second;
+        }
+    }
 }
 
 .ct-pc-left {
@@ -79,7 +126,8 @@ html {
     }
 }
 
-.ct-pc-main {
+.ct-pc-main,
+.more-list-page {
     border-color: $font-third !important;
 
     .ct-carousel {
@@ -94,19 +142,20 @@ html {
             }
         }
     }
+}
 
-    .ct-home-iteam-list {
+.ct-home-iteam-list,
+.more-list-page {
 
-        .f-more-link {
-            color: $font-third;
-        }
+    .f-more-link {
+        color: $font-third;
+    }
 
-        .card-body {
-            color: $font-main;
+    .card-body {
+        color: $font-main;
 
-            .price {
-                color: $font-second;
-            }
+        .price {
+            color: $font-second;
         }
     }
 }
@@ -129,20 +178,51 @@ html {
     .card {
         background: $second 0% 0%;
 
-        p.title{
+        p.title {
             border-bottom-color: $font-third !important;
         }
 
         a.f-register-link {
-           color: $font-second; 
+            color: $font-second;
         }
 
         a.f-forget-link {
-            color: $font-main;
+            color: $font-third;
         }
 
         input {
             background-color: $third;
+        }
+    }
+}
+
+.forget-page {
+    .lead {
+        color: $font-third;
+    }
+
+    input {
+        background-color: $third;
+    }
+}
+
+.register-page {
+    .warp {
+        background-color: $second;
+
+        .list-title {
+            border-color: $font-third !important;
+        }
+
+        input,
+        select {
+            background-color: $third;
+        }
+
+        .f-submit-warp {
+            .f-login-link {
+                color: $font-second;
+            }
         }
     }
 }

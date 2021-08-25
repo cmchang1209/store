@@ -3,8 +3,13 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import Home from '../views/Home'
+
 import Login from '../views/Login'
 import Register from '../views/Register'
+import Forget from '../views/Forget'
+
+import Cart from '../views/Cart'
+import More from '../views/MoreList'
 
 //不允許導航到當前位置
 const originalPush = VueRouter.prototype.push
@@ -17,23 +22,33 @@ VueRouter.prototype.push = function push(location, onResolve, onReject) {
 export default new VueRouter({
     mode: 'history',
     routes: [{
-            path: '/',
-            name: 'Home',
-            component: Home,
-        },{
-            path: '/login',
-            name: 'Login',
-            component: Login
-        },{
-            path: '/register',
-            name: 'Register',
-            component: Register
-        },
-        {
-            path: "*",
-            redirect: "/"
-        }
-    ],
+        path: '/',
+        name: 'Home',
+        component: Home,
+    }, {
+        path: '/login',
+        name: 'Login',
+        component: Login
+    }, {
+        path: '/register',
+        name: 'Register',
+        component: Register
+    }, {
+        path: '/forget',
+        name: 'Forget',
+        component: Forget
+    }, {
+        path: '/cart',
+        name: 'Cart',
+        component: Cart
+    }, {
+        path: '/more',
+        name: 'More',
+        component: More
+    }, {
+        path: "*",
+        redirect: "/"
+    }],
     /*
     切換路由scroll top 回頂部
      */

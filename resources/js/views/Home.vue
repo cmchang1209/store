@@ -16,7 +16,7 @@ export default {
         return {
             list: [{
                     title: '主題',
-                    link: '',
+                    link: 'more',
                     data: [{
                             imgSrc: './images/prod1.png',
                             text: '節日期間特別限定 - FIDODARTS 經 典主題系列 - 沈穩藍',
@@ -36,7 +36,7 @@ export default {
                 },
                 {
                     title: '動畫',
-                    link: '',
+                    link: 'more',
                     data: [{
                             imgSrc: './images/prod2.png',
                             text: 'FIDODARTS 獲獎動畫-四季季節',
@@ -56,7 +56,7 @@ export default {
                 },
                 {
                     title: '音效',
-                    link: '',
+                    link: 'more',
                     data: [{
                             imgSrc: './images/prod3.png',
                             text: 'FIDODARTS 聖誕節日特別音效包',

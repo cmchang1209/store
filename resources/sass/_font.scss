@@ -1,7 +1,7 @@
 body,
 html {
     font-size: 1.05rem;
-    font-family: 'Noto Sans TC', sans-serif !important;
+    font-family: Oswald, 'Noto Sans TC', sans-serif !important;
     font-size: 1rem;
 }
 
@@ -27,6 +27,23 @@ html {
     }
 }
 
+.f-cart-tooltip {
+    .tooltip-inner {
+        .contant {
+            font-size: .75rem;
+        }
+
+        .price {
+          font-size: 1rem;  
+        }
+
+        .f-cart-link {
+            font-size: .75rem;
+        }
+    }
+}
+
+
 .ct-pc-left {
     .list-group {
         .list-group-item {
@@ -47,7 +64,7 @@ html {
     }
 }
 
-.ct-home-iteam-list {
+.ct-home-iteam-list, .more-list-page {
     h5 {
         font-size: 1.25rem;
     }
@@ -72,10 +89,29 @@ html {
     }
 }
 
+.login-page,
+.forget-page,
+.register-page {
+    label {
+        font-size: 1.25rem;
+
+        &.custom-control-label {
+            font-size: inherit;
+        }
+    }
+}
+
 .login-page {
     .card {
-        label {
-           font-size: 1.25rem; 
+        .f-forget-link {
+            font-size: .85rem;
         }
+    }
+}
+
+.register-page,
+.forget-page {
+    .list-title {
+        font-weight: 400;
     }
 }
