@@ -186,7 +186,8 @@
 }
 
 .ct-pc-main,
-.more-list-page {
+.more-list-page,
+.user-page {
     border-left: 1px solid;
     min-height: calc(100vh - 150px);
     padding-left: 3rem;
@@ -237,6 +238,14 @@
             padding-left: 0;
             padding-right: 0;
             letter-spacing: .15rem;
+
+            .price {
+                .bi-heart {
+                    float: right;
+                    margin-top: .35rem;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
@@ -262,8 +271,10 @@
 .login-page,
 .forget-page,
 .register-page,
-.cart-page {
-    min-height: calc(100vh - 235px);
+.cart-page,
+.checkout-page,
+.done-page {
+    min-height: calc(100vh - 237px);
 
     .card {
         border-radius: .5rem;
@@ -313,5 +324,76 @@
                 margin-top: -.75rem;
             }
         }
+    }
+}
+
+.cart-page,
+.checkout-page {
+
+    .cart-title-warp {
+        border-bottom: 1px solid;
+
+        .cart-img {
+            width: 2.5rem;
+        }
+
+        .cart-title {
+            margin: .35rem 0 0 1.5rem;
+        }
+    }
+
+    .cart-list-warp {
+        border-bottom: 1px solid;
+
+        .cart-iteam {
+            .prod-img {
+                width: 100%;
+            }
+        }
+    }
+
+    .all-select-warp {
+        padding: 0 2.15rem;
+    }
+
+    .total-warp {
+        a {
+            float: right;
+        }
+    }
+
+    .pay-warp {
+        .fd-btn.pay-type-btn {
+            border: 1px solid;
+            border-radius: .25rem;
+            padding: .5rem 1rem .5rem 3rem;
+            background-image: url('./images/pay-1.png');
+            background-repeat: no-repeat;
+            background-size: auto 60%;
+            background-position: .5rem;
+            text-align: left;
+            width: 12rem;
+
+            &:last-child {
+                background-image: url('./images/pay-2.png');
+            }
+        }
+    }
+}
+
+.checkout-page .total-warp {
+    height: 100%;
+}
+
+.done-page {
+    background-image: url('./images/done.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 25%;
+    position: relative;
+
+    .f-user-link-warp {
+        position: absolute;
+        bottom: 0;
     }
 }

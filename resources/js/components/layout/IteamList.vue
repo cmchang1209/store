@@ -17,8 +17,11 @@
                         <td v-for="(iteam, index) in data.data" :key="index">
                             <b-card title="" :img-src="iteam.imgSrc" img-alt="Image" img-top tag="article">
                                 <b-card-text>
-                                	<div class="text">{{ iteam.text }}</div>
-                                	<div class="price mt-3">{{ iteam.price }}</div>
+                                    <div class="text">{{ iteam.text }}</div>
+                                    <div class="price mt-3">
+                                        {{ iteam.price }}
+                                        <b-icon-heart></b-icon-heart>
+                                    </div>
                                 </b-card-text>
                             </b-card>
                         </td>

@@ -34,7 +34,7 @@ html {
         }
 
         .price {
-          font-size: 1rem;  
+            font-size: 1rem;
         }
 
         .f-cart-link {
@@ -64,7 +64,8 @@ html {
     }
 }
 
-.ct-home-iteam-list, .more-list-page {
+.ct-home-iteam-list,
+.more-list-page {
     h5 {
         font-size: 1.25rem;
     }
@@ -113,5 +114,20 @@ html {
 .forget-page {
     .list-title {
         font-weight: 400;
+    }
+}
+
+.cart-page,
+.checkout-page {
+    .total-warp {
+        .title {
+            font-weight: 400;
+        }
+    }
+
+    .pay-warp {
+        .fd-btn.pay-type-btn {
+            font-size: .85rem;
+        }
     }
 }

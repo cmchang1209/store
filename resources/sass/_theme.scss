@@ -1,6 +1,7 @@
 $main: #333333;
 $second: #262626;
 $third: #191919;
+$fourth: #404040;
 
 $font-main: #E6E6E6;
 $font-second: #21F7FF;
@@ -22,6 +23,14 @@ html {
 
 .text-color-3 {
     color: $font-third;
+}
+
+.text-color-2,
+.price {
+    color: $font-second;
+    &:hover {
+        color: $font-second;
+    }
 }
 
 .pagination {
@@ -155,7 +164,9 @@ html {
         color: $font-main;
 
         .price {
-            color: $font-second;
+            .bi-heart {
+               color: $font-main; 
+            }
         }
     }
 }
@@ -223,6 +234,36 @@ html {
             .f-login-link {
                 color: $font-second;
             }
+        }
+    }
+}
+
+.cart-page, .checkout-page {
+
+    .cart-title-warp,
+    .cart-list-warp {
+        border-color: $font-third !important;
+    }
+
+    .cart-iteam-warp {
+        background-color: $fourth;
+
+        .cart-iteam {
+
+            .del {
+                color: $font-third;
+            }
+        }
+    }
+
+    .total-warp, .pay-warp {
+        .fd-btn.pay-type-btn {
+            background-color: inherit;
+            border-color: $font-third !important;
+            color: $font-main;
+        }
+        a {
+            color: $main;
         }
     }
 }

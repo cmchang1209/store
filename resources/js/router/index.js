@@ -10,6 +10,10 @@ import Forget from '../views/Forget'
 
 import Cart from '../views/Cart'
 import More from '../views/MoreList'
+import CheckOut from '../views/CheckOut'
+import Done from '../views/Done'
+
+import User from '../views/User'
 
 //不允許導航到當前位置
 const originalPush = VueRouter.prototype.push
@@ -46,6 +50,18 @@ export default new VueRouter({
         name: 'More',
         component: More
     }, {
+        path: '/checkout',
+        name: 'CheckOut',
+        component: CheckOut
+    },{
+        path: '/done',
+        name: 'Done',
+        component: Done
+    },{
+        path: '/user',
+        name: 'User',
+        component: User
+    },{
         path: "*",
         redirect: "/"
     }],

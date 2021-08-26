@@ -32,6 +32,16 @@ button,
     display: none
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-color-2 {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .pagination {
     .page-item {
         margin: 0 1rem;

@@ -41,7 +41,7 @@ export default {
     created() {
         var path = this.$route.path
         var paths = path.split('/')
-        if (['login', 'forget', 'register', 'cart'].indexOf(paths[1]) !== -1) {
+        if (['login', 'forget', 'register', 'cart', 'checkout', 'done'].indexOf(paths[1]) !== -1) {
             this.changePageStatus(false)
         }
     },
