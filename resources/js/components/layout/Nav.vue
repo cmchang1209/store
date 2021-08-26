@@ -9,7 +9,7 @@
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
                 <b-nav-form class="f-nav-search-form">
-                    <b-form-input class="mr-sm-2 f-nav-search" placeholder="Search"></b-form-input>
+                    <b-form-input class="mr-sm-2 f-nav-search" placeholder="搜尋"></b-form-input>
                 </b-nav-form>
                 <div right>
                     <a href="/cart" class="f-nav-link" id="f-tooltip-cart">
